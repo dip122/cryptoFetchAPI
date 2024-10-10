@@ -69,7 +69,7 @@ const fetchCryptoData = async () => {
     }
 };
 
-fetchCryptoData();
+// fetchCryptoData();
 cron.schedule('0 */2 * * *' , fetchCryptoData);
 
 app.use('/crypto',cryptorouter)
