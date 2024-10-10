@@ -72,7 +72,7 @@ const fetchCryptoData = async () => {
 // fetchCryptoData();
 cron.schedule('0 */2 * * *' , fetchCryptoData);
 
-app.use('/crypto',cryptorouter)
+app.use('/',cryptorouter)
 
 app.listen(process.env.PORT || port , ()=>{
     console.log(`Listening to the port ${port}`);
